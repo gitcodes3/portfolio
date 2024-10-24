@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/x-icon">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="porfolio_contact.css" />
+
+
+</head>
+
+<body>
+    <div class="navigation_bar">
+        <nav>
+
+            <img src="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" class="page_logo" alt="Portfolio Icon" />
+            <!-- alt attribut provides an alternative text for user incase the user is not able to view the image for some reason -->
+
+            <ul>
+                <!--The <a> tag defines a hyperlink, which is used to link from one page to another.-->
+
+                <li><a href ='#'>Conatct Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+  <!-- Form Section -->
+  <div class="form-page">
+    <div class="col-md-6">
+      <div class="form-container">
+        <h3 class="text-center mb-4">Contact Me</h3>
+        <form>
+        
+          <div class="form-group">
+    
+            <input type="text" class="form-control" id="name" value="Name" placeholder="Enter your name" required>
+          </div>
+
+        
+          <div class="form-group">
+        
+            <input type="email" class="form-control" id="email" value="Email" required>
+          </div>
+
+          <!-- Subject Field -->
+          <div class="form-group">
+    
+            <input type="text" class="form-control" value="Subject" id="subject" required>
+          </div>
+
+          <!-- Project Description Field -->
+          <div class="form-group">
+            <label for="description">Project Description</label>
+            <textarea class="form-control" id="description" rows="5" value="Project Description" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

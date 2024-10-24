@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/*This imports the "Poppins" font from Google Fonts, so the entire webpage will use this font for text.*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+
+/* The * selects all elements on the page. This code resets margins and padding to zero for everything to make layout easier and consistent. It also ensures all text will use the "Poppins" font.*/ 
+
+body {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShpL6Uwd4GbD7Uf5Qnk19AYzRMqdiSgdoOKg&s) no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the full background */
+}
+
+a {
+    text-decoration: none;
+}
+/*This removes the underline from links (a tags).*/
+
+.navigation_bar {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px; /* Adds padding at the bottom to create space between the navbar and the form */
+}
+
+.page_logo {
+    max-height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Vertically center logo and menu */
+    padding: 30px 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center; /* Center the menu items */
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; /* Allows the menu to grow and take up space between the logo and other items */
+}
+
+nav ul li {
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(71, 63, 11, 0.95);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+nav ul li a:hover {
+    color: rgb(17, 87, 172);
+}
+/* When hovering over a link it changes it to this color */
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #870656;
+    transition: 0.3s;
+    bottom: 0;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+/*When hovering over the link, the red line expands to the full width under the text*/
+
+.form-container {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 16, 69, 0.1);
+    background-color: white; /* Ensure the form stands out against the background */
+    margin-top: 20px; /* Adds space between the form and the navbar */
+}
+
+/* Center the form vertically and horizontally */
+.form-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+    border-radius: 0px;
+}
+

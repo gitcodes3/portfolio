@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+   
+    <!--  The rel attribute specifies the relationship between the current document and the linked document. -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Loading Bootrstrap CSS framework -->
+    <link rel="stylesheet" href="portfolio(final).css">
+</head>
+
+<body>
+    <div class="navigation_bar">
+
+        <nav class="navbar navbar-expand-lg navbar-light"> <!-- nav elemnet represents section with navigation links-->
+
+        <!-- A horizontal navbar that becomes vertical large screens-->
+
+            <a class="navbar-brand"><img src="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" alt="Logo" class="page_logo"></a>
+            <!--  <a> tag defines a hyperlink which is used to link from one page to another  -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- This button appears on small screens. When clicked, it toggles/collaspe the navbar's visibility into one button-->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">   <!-- This div contains the collapsible menu. It collapses on small screens and expands on larger one-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Portfolio(final).html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" target="_blank">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio_contact.html" target="_blank">Contact</a>
+                    </li>
+                </ul>
+                <a href="Resume-_Ilma_Asif[1].pdf" class="btn" target="_blank">Resume</a>
+            </div>
+        </nav>
+
+        <!-- Content and Image Section-->
+
+        <div class="container">   <!-- A Bootstrap container that provides margins and centers the content on the page-->
+            <div class="row align-items-center" style="min-height: 100vh;">  <!-- Creates a row with two columns, align-items-center vertically centers the content-->
+                <!-- First Column -->
+                <div class="col-md-6">  <!--The left half of the page (on medium and larger screens) contains text and a button-->
+                    <div class="Page_content">
+                        <span class="content_title">WEB DEVELOPER</span>
+                        <h1>Hello, I'm <span>Ilma</span></h1>
+                        <p>I am a Computer Science student at Forman Christian College, passionate about harnessing technology to solve real world problems. My interests include Web Development, Artificial Intelligence and building innovative solutions that improve daily life. Explore my projects to see how I combine creativity with technical skills to bring ideas to life</p>
+                        <a href="Resume- Ilma Asif.docx" download="CV" class="btn">Download CV</a>
+
+                    </div>
+                </div>
+
+                <!-- Second Column -->
+                <div class="col-md-6">  <!-- The right half of the page contains an image-->
+                    <div class="my_image">
+                        <img src="IMG-20241020-WA0002.jpg" alt="My Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--These three <script> tags load necessary JavaScript libraries for Bootstrap to work. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
